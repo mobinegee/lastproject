@@ -29,19 +29,19 @@ function App() {
     <ThemeProvider>
       <Router>
           <Routes>
-            <Route path="/" element={<Explore />} />
-            <Route path="/Chats" element={<Chats />} />
-            <Route path="/ProfileExplore" element={<ProfileExplore />} />
-            <Route path="/PostExplore" element={<PostExplore />} />
-            <Route path="/SerachExplore" element={<SerachExplore />} />
-            <Route path="/ChatsOther/:groupName" element={<ChatsOther />} />
-            <Route path="/ProfileOther/:username" element={<ProfileOther />} />
-            <Route path="/GroupPage" element={<GroupPage />} />
-            <Route path="/ExplorePost" element={<ExplorePost />} />
-            <Route path="/EditProfile" element={<EditProfile />} />
-            <Route path="/GroupName/:groupName" element={<GroupName />} />
-            <Route path="/PostsSlider" element={<PostsSlider />} />
-            <Route path="/Profilesetting" element={<Profilesetting />} />
+            <Route path="/lastproject" element={<Explore />} />
+            <Route path="/lastproject/Chats" element={<Chats />} />
+            <Route path="/lastproject/ProfileExplore" element={<ProfileExplore />} />
+            <Route path="/lastproject/PostExplore" element={<PostExplore />} />
+            <Route path="/lastproject/SerachExplore" element={<SerachExplore />} />
+            <Route path="/lastproject/ChatsOther/:groupName" element={<ChatsOther />} />
+            <Route path="/lastproject/ProfileOther/:username" element={<ProfileOther />} />
+            <Route path="/lastproject/GroupPage" element={<GroupPage />} />
+            <Route path="/lastproject/ExplorePost" element={<ExplorePost />} />
+            <Route path="/lastproject/EditProfile" element={<EditProfile />} />
+            <Route path="/lastproject/GroupName/:groupName" element={<GroupName />} />
+            <Route path="/lastproject/PostsSlider" element={<PostsSlider />} />
+            <Route path="/lastproject/Profilesetting" element={<Profilesetting />} />
           </Routes>
       </Router>
     </ThemeProvider>
