@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-container {
+    width: 90%;
+    margin: 50px auto auto auto;
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+}
+.profile-header img{
+    margin: 20px;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-info h1 {
+    margin: 0;
+}
+.profile-info {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto; /* Centers the container */
+}
+
+.profile-stats {
+    display: flex; 
+    justify-content: center; /* Centers the flex items horizontally */
+    gap: 40px; /* Add space between stats */
+    width: 100%;
+    text-align: center;
+    /* background-color: red; */
+    margin-top: 10px; /* Space above stats */
+}
+.videopost {
+    height: 300px;
+    width: auto; /* تنظیم عرض متناسب با ارتفاع */
+    width: 100%; /* اطمینان از اینکه عرض ویدیو بیشتر از فضای موجود نشود */
+}
+
+
+.stat {
+    text-align: center; /* Center the text */
+}
+
+.profile-bio {
+    margin-top: 20px;
+}
+
+.profile-posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.post {
+    background-color: #eaeaea;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.post img {
+    width: 100%;
+    height: 300px;
+}
+@media screen and (max-width: 576px) {
+    .videopost {
+        height: 140px;
+        width: 100%;
+        border-radius: 8px;
+    }
+    .post img {
+        width: 100%;
+        height: 140px;
+    }
+
+}
+@media screen and (min-width : 576px) {
+    .profile-container{
+        width: 600px;
+    }
+    
+}
+@media screen and (min-width : 900px) {
+    .profile-container{
+        width: 900px;
+        padding: 10px;
+    }
+    
+}

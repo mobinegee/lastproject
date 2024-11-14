@@ -1,0 +1,279 @@
+/* استایل کلی بدن صفحه */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+}
+
+/* پروفایل کانتینر: سایه و افکت زوم */
+.profile-container {
+    width: 90%;
+    margin: 50px auto;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* هدر پروفایل: عکس پروفایل و اطلاعات */
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-header img {
+    margin: 20px;
+}
+
+/* عکس پروفایل */
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 4px solid #007BFF;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile-picture:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* اطلاعات پروفایل */
+.profile-info h1 {
+    margin: 0;
+}
+.profile-info {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* استایل برای آمار پروفایل */
+.profile-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h2 {
+    margin: 0;
+}
+
+/* بیوگرافی پروفایل */
+.profile-bio {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* دکمه‌ها: افکت زوم و تغییر رنگ پس‌زمینه در هاور */
+/* دکمه‌ها: افکت زوم و تغییر رنگ پس‌زمینه در هاور */
+.buttonsprofile {
+    display: flex;  /* اضافه کردن flexbox */
+    justify-content: center;  /* وسط‌چین کردن دکمه‌ها */
+    gap: 10px;  /* فاصله بین دکمه‌ها */
+}
+
+.buttonsprofile > div {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    background-color: #eaeaea;
+    border-radius: 8px;
+    padding: 10px 0px 10px 0px;
+    width: 300px;
+    text-align: center;
+}
+
+.buttonsprofile > div:hover {
+    transform: scale(1.1);
+    background-color: #d1d1d1;
+}
+
+/* دکمه‌های لیست */
+.buttonsprofile li {
+    cursor: pointer;
+    color: #555;
+    /* background-color: red; */
+    width: 90%;
+    font-weight: bold;
+    transition: color 0.3s;
+    /* white-space: nowrap; */
+
+}
+
+.buttonsprofile li:hover {
+    color: #007BFF;
+
+}
+
+/* پست‌ها: جلوه‌ی هاور */
+.post {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px;
+}
+.post:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* استایل برای ویدیو و عکس پست‌ها */
+.post img, .videopost {
+    transition: opacity 0.3s ease;
+}
+.post:hover img, .post:hover .videopost {
+    opacity: 0.9;
+}
+
+/* گرید پست‌ها */
+.profile-posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* ویدیو پست‌ها */
+.videopost {
+    height: 200px;
+    width: 100%;
+    border-radius: 8px;
+}
+/* Slider Container */
+.slider-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.aligen1 > div{
+    width: 100%;
+}
+.slider{
+    width: 100%;
+}
+
+/* دکمه‌های Prev و Next */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10;
+}
+
+.prev {
+    left: -110px; /* دکمه Prev را به سمت چپ جابجا می‌کند */
+}
+
+.next {
+    right: -110px;
+}
+
+/* دکمه‌ها در حالت هاور */
+.prev:hover, .next:hover {
+    background-color: #0056b3;
+}
+
+/* تنظیمات برای ویدیو یا عکس */
+/* .slider .post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+} */
+
+/* انیمیشن بارگذاری برای پست‌ها */
+@keyframes loading {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+.loading-placeholder {
+    animation: loading 1.5s infinite ease-in-out;
+}
+
+.aligen1 {
+    /* background-color: blue; */
+    width: 100%;
+    height : 100vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ریسپانسیو برای صفحه موبایل */
+@media screen and (max-width: 576px) {
+    .profile-container {
+        width: 100%;
+    }
+    .buttonsprofile li {
+        font-size: 10px;
+        padding: 0px;
+    }
+    .buttonsprofile > div {
+        padding: 0px;
+        padding-top: 10px;
+    }
+    .aligen{
+        max-width: 450px;
+        height: 700px;
+    }
+
+    
+}
+
+/* ریسپانسیو برای صفحات بزرگتر */
+@media screen and (min-width: 576px) {
+    .profile-container {
+        width: 600px;
+    }
+}
+@media screen and (min-width: 600px) {
+    .aligen1{
+        width: 100%;
+        /* background-color: red; */
+        height: 400px;
+        
+    }
+    
+}
+
+@media screen and (min-width: 900px) {
+    .profile-container {
+        width: 900px;
+        padding: 20px;
+    }
+}

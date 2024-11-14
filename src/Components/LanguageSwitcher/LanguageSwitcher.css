@@ -1,0 +1,35 @@
+/* Center the language switcher and apply some margin */
+.language-switcher-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Spacing between buttons */
+    margin: 20px 0;
+  }
+  
+  /* Style for buttons */
+  .language-switcher-container button {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+    background-color: #f0f0f0; /* Light grey background */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  }
+  
+  /* Hover effect for buttons */
+  .language-switcher-container button:hover {
+    background-color: #4a90e2; /* Soft blue on hover */
+    color: white; /* White text on hover */
+  }
+  
+  /* Active/Selected language button */
+  .language-switcher-container .active {
+    background-color: #4a90e2;
+    color: white;
+    border-color: #4a90e2;
+  }
+  
